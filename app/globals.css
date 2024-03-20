@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts.css";
+
+@layer utilities {
+	.link {
+		@apply underline decoration-slate-400 decoration-dotted underline-offset-2;
+	}
+
+	.title {
+		@apply font-accent text-4xl font-bold !leading-tight sm:max-w-xl md:max-w-2xl;
+	}
+
+	.shiny {
+		-webkit-text-fill-color: transparent;
+		@apply animate-[shine_5s_cubic-bezier(0.4,_0.7,_0.7,_0.4)_infinite] -bg-gradient-60 from-primary from-[70%] via-accent via-[75%] to-primary to-[80%] box-decoration-clone bg-[200%_auto] bg-clip-text text-primary;
+	}
+
+	.markdown {
+		@apply prose prose-lg prose-slate prose-headings:font-accent
+    prose-headings:leading-tight prose-p:before:content-none prose-p:after:content-none
+    prose-a:text-primary prose-a:decoration-dotted prose-a:underline-offset-4
+    prose-blockquote:font-normal prose-blockquote:not-italic prose-figure:-mx-8 prose-figcaption:mx-8
+    prose-table:block prose-table:overflow-x-auto md:prose-img:rounded-lg;
+	}
+
+	.markdown details {
+		@apply my-4;
+	}
+
+	.markdown summary {
+		@apply cursor-pointer rounded-md border px-6 py-4 text-base font-medium shadow-sm;
+	}
+
+	.markdown details[open] > summary {
+		@apply border-b pb-4 text-primary;
+	}
+
+	.markdown details[open] {
+		@apply border-b-2 border-dotted;
+	}
+}
+
+@keyframes shine {
+	from {
+		background-position: 200% center;
+	}
+}
