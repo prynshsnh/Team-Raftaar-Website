@@ -6,8 +6,7 @@ export default function Logo() {
 		<Image
 			priority
 			alt="Build the Future logo"
-			width="64"
-			height="38"
+			width="100"
 			src={logo}
 		/>
 	)

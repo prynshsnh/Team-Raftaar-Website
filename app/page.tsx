@@ -38,14 +38,14 @@ function Background() {
 		<>
 			<div
 				style={{
-					backgroundColor: "rgba(255,255,255,0)",
+					backgroundColor: "rgb(249 115 22)",
 					backgroundImage:
-						"linear-gradient(#f0f4f8 1px, transparent 1px), linear-gradient(to right, #f0f4f8 1px, transparent 1px)",
+						"linear-gradient(rgb(234 88 12) 1px, transparent 1px), linear-gradient(to right, rgb(234 88 12) 1px, transparent 1px)",
 					backgroundSize: "80px 80px",
 				}}
 				className="absolute inset-0 -z-10"
 			/>
-			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-white" />
+			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-800 to-70%" />
 		</>
 	)
 }
@@ -60,22 +60,22 @@ export default function Home() {
 			>
 				<Link
 					href="/decal"
-					className="transform whitespace-nowrap rounded-full bg-accent px-4 py-1 text-sm font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
+					className="transform whitespace-nowrap mx-auto rounded-full bg-orange-200 px-4 py-1 text-sm font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
 				>
 					Apply to Team Raftaar »
 				</Link>
-				<h1 className="mt-8 max-w-xl font-accent text-4xl font-bold !leading-[1.15] text-slate-800 md:text-6xl">
+				<h1 className="mt-8 max-w-xl font-accent text-4xl font-bold !leading-[1.15] text-slate-200 md:text-6xl">
 					Where engineering{" "}
-					<span className="shiny text-primary">meets velocity</span> 💨
+					<span className="shiny text-primary">meets speed</span> 💨
 				</h1>
-				<p className="mb-12 mt-8 max-w-[45ch] text-lg text-slate-600 sm:text-xl">
-					Team Raftaar is the Human Powered vehicle team of Delhi&nbsp;Technological&nbsp;University established in 2011.
+				<p className="mb-20 mt-8 max-w-[45ch] text-lg text-slate-100 sm:text-xl mx-auto">
+					Team Raftaar is the Human Powered vehicle team of Delhi Technological University established in 2011.
 				</p>
 				{/* <Subscribe /> */}
 				<Photos />
 			</Container>
 
-			<div className="z-10 border-t bg-white px-8 py-24">
+			<div className="z-10 border-t bg-zinc-800 px-8 py-24">
 				<section className="mx-auto max-w-3xl">
 					<div className="mb-8 flex flex-col items-baseline gap-2 md:mb-4 md:flex-row md:gap-4">
 						<p className="text-xl text-slate-700 md:text-2xl">Speaker Series</p>
