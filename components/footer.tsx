@@ -35,9 +35,7 @@ export default function Footer() {
 					))}
 				</div>
 				<p className="max-w-sm text-slate-400">
-					We are a student group acting independently of the University of
-					California. We take full responsibility for our organization and this
-					website.
+					© Team Raftaar 2024
 				</p>
 			</Container>
 		</footer>

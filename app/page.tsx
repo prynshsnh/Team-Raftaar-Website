@@ -5,7 +5,12 @@ import kaze from "@/public/images/home/Kaze.png"
 import team from "@/public/images/home/team.jpeg"
 import winner from "@/public/images/home/winner.jpeg"
 import collage from "@/public/images/home/collage.png"
-import theHouseFund from "@/public/images/sponsors/thehouse.svg"
+import solidWorks from "@/public/images/sponsors/solidworks.png"
+import ansys from "@/public/images/sponsors/ansys.png"
+import creo from "@/public/images/sponsors/creo.png"
+import vactech from "@/public/images/sponsors/vactech.png"
+import codingninjas from "@/public/images/sponsors/ninjas.png"
+import altair from "@/public/images/sponsors/altair.png"
 import Container from "@/components/container"
 import Link from "next/link"
 
@@ -65,7 +70,7 @@ export default function Home() {
 				>
 					Apply to Team Raftaar »
 				</Link>
-				<h1 className="mt-8 max-w-2xl text-center font-primary text-4xl uppercase italic font-bold !leading-[1.15] text-slate-200 md:text-6xl">
+				<h1 className="mt-8 max-w-2xl text-center font-primary text-4xl uppercase italic tracking-tighter font-bold !leading-[1.15] text-slate-200 md:text-6xl">
 					Where engineering{" "}
 					<span className="shiny text-orange-300">meets speed </span> 💨
 				</h1>
@@ -76,43 +81,21 @@ export default function Home() {
 				<Photos />
 			</Container>
 
-			{/* <div className="z-10 border-t border-zinc-600 bg-zinc-800 px-8 py-24">
+			<div className="z-10 border-t border-zinc-600 bg-zinc-900 px-8 py-20">
 				<section className="mx-auto max-w-3xl">
-					<div className="mb-8 flex flex-col items-baseline gap-2 md:mb-4 md:flex-row md:gap-4">
-						<p className="text-xl text-slate-700 md:text-2xl">Speaker Series</p>
-						<p className="text-slate-500">
-							Offered as UGBA 198, a 2-unit DeCal
-						</p>
-					</div>
-					<h2 className="font-accent text-3xl font-bold text-slate-800 md:text-4xl">
-						1 founder. 30 students. Every week.
+					<h2 className="text-3xl font-bold text-center text-primary md:text-4xl">
+						Our Proud Sponsors
 					</h2>
-					<a
-						className="mb-12 mt-8 inline-block transform rounded-lg border border-blue-800 bg-primary px-6 py-2 font-bold text-white shadow-sm transition-transform hover:scale-105"
-						href="/decal/"
-					>
-						More on the series »
-					</a>
-					<p className="mb-4 font-medium text-slate-600">Featured Guests</p>
-					<div className="grid grid-cols-1 gap-4 text-slate-800 sm:grid-cols-2 md:grid-cols-3">
-						{speakers.map((speaker) => (
-							<div key={speaker.name} className="flex items-center gap-4">
-								<Image
-									alt={`Picture of ${speaker.name}`}
-									height="48"
-									width="48"
-									className="h-16 w-16 rounded-full shadow"
-									src={speaker.image}
-								/>
-								<div>
-									<p className="font-bold">{speaker.name}</p>
-									<p>{speaker.company}</p>
-								</div>
-							</div>
-						))}
+					<div className="flex flex-col gap-5 justify-center items-center mt-10 md:flex-row md:gap-10">
+						<Image src={solidWorks} alt="Solid Works" className="h-10 w-auto"/>
+						<Image src={ansys} alt="Ansys" className="h-10 w-auto"/>
+						<Image src={altair} alt="Altair" className="h-10 w-auto"/>
+						<Image src={codingninjas} alt="Coding Ninjas" className="h-16 w-auto"/>
+						<Image src={vactech} alt="Vactech" className="h-16 w-auto"/>
+						<Image src={creo} alt="Creo" className="h-16 w-auto"/>
 					</div>
 				</section>
-			</div> */}
+			</div>
 			<div className="flex flex-col gap-3 justify-between items-center mx-auto border-t border-zinc-600 bg-zinc-800 px-8 py-24 text-slate-100 md:flex-row md:px-28">
 				<section className="max-w-2xl">
 					<div className="mb-8 flex flex-col items-baseline gap-2">
