@@ -66,10 +66,10 @@ function People({
 				className="h-24 w-24 rounded-lg object-cover object-top shadow-sm md:h-48 md:w-48"
 			/>
 			<div>
-				<p className="text-lg font-medium text-slate-800">
+				<p className="text-lg font-medium text-slate-100">
 					{person.name} ‘{person.class}
 				</p>
-				<p className="text-sm text-slate-500">{person.major}</p>
+				<p className="text-sm text-orange-300">{person.major}</p>
 				<Socials person={person} />
 			</div>
 		</div>
@@ -87,11 +87,11 @@ export default function Team() {
 	return (
 		<Container>
 			<h1 className="title mb-4 text-primary">Team</h1>
-			<p className="max-w-lg text-lg text-slate-600 sm:text-xl">
+			<p className="max-w-xl text-lg text-slate-200 sm:text-xl">
 				We’re a small team of facilitators with an ambitious mission.
 			</p>
 			<People people={team} order="asc" />
-			<h2 className="mt-12 font-accent text-3xl font-bold">Alumni</h2>
+			<h2 className="mt-12 font-accent text-primary text-3xl font-bold">Alumni</h2>
 			<People people={alumni} order="desc" />
 		</Container>
 	)
