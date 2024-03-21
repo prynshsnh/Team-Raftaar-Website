@@ -1,9 +1,10 @@
 import Subscribe from "@/components/subscribe"
 import speakers from "@/data/speakers.json"
 import Image from "next/image"
-import withDelian from "@/public/images/decal/with-delian.jpg"
-import decal from "@/public/images/decal/decal.png"
-import basesCollab from "@/public/images/coworking/bases-collab.jpg"
+import kaze from "@/public/images/home/Kaze.png"
+import team from "@/public/images/home/team.jpeg"
+import winner from "@/public/images/home/winner.jpeg"
+import collage from "@/public/images/home/collage.png"
 import theHouseFund from "@/public/images/sponsors/thehouse.svg"
 import Container from "@/components/container"
 import Link from "next/link"
@@ -12,19 +13,19 @@ function Photos() {
 	return (
 		<div className="-z-10 mt-8 flex max-w-full items-start gap-12">
 			<Image
-				src={withDelian}
+				src={kaze}
 				alt="Picture of the class with Delian Asparouhov"
 				placeholder="blur"
 				className="hidden h-48 w-96 translate-y-8 -rotate-6 transform rounded-lg object-cover shadow-xl lg:block"
 			/>
 			<Image
-				src={decal}
+				src={team}
 				alt="Picture of students in a classroom with a guest speaker in front of them"
 				placeholder="blur"
 				className="hidden h-48 w-96 translate-y-8 -rotate-1 transform rounded-lg object-cover shadow-xl sm:block"
 			/>
 			<Image
-				src={basesCollab}
+				src={winner}
 				alt="Picture of a group of students working together in a coworking space"
 				placeholder="blur"
 				className="h-48 w-96 translate-y-8 rotate-2 transform rounded-lg object-cover shadow-xl"
@@ -38,14 +39,14 @@ function Background() {
 		<>
 			<div
 				style={{
-					backgroundColor: "rgb(249 115 22)",
+					backgroundColor: "rgb(240,146,48)",
 					backgroundImage:
-						"linear-gradient(rgb(234 88 12) 1px, transparent 1px), linear-gradient(to right, rgb(234 88 12) 1px, transparent 1px)",
+						"linear-gradient(rgb(224, 129, 27) 1px, transparent 1px), linear-gradient(to right, rgb(224, 129, 27) 1px, transparent 1px)",
 					backgroundSize: "80px 80px",
 				}}
 				className="absolute inset-0 -z-10"
 			/>
-			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-800 to-70%" />
+			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-800 to-50%" />
 		</>
 	)
 }
@@ -60,22 +61,22 @@ export default function Home() {
 			>
 				<Link
 					href="/decal"
-					className="transform whitespace-nowrap mx-auto rounded-full bg-orange-200 px-4 py-1 text-sm font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
+					className="transform whitespace-nowrap mx-auto rounded-full bg-orange-200 px-4 py-1 text-base font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
 				>
 					Apply to Team Raftaar »
 				</Link>
-				<h1 className="mt-8 max-w-xl font-accent text-4xl font-bold !leading-[1.15] text-slate-200 md:text-6xl">
+				<h1 className="mt-8 max-w-2xl text-center font-primary text-4xl uppercase italic font-bold !leading-[1.15] text-slate-200 md:text-6xl">
 					Where engineering{" "}
-					<span className="shiny text-primary">meets speed</span> 💨
+					<span className="shiny text-orange-300">meets speed </span> 💨
 				</h1>
-				<p className="mb-20 mt-8 max-w-[45ch] text-lg text-slate-100 sm:text-xl mx-auto">
-					Team Raftaar is the Human Powered vehicle team of Delhi Technological University established in 2011.
+				<p className="mb-12 mt-8 max-w-[45ch] text-lg text-center text-slate-100 sm:text-xl mx-auto">
+					Team Raftaar is the Hybrid Human Powered Vehicle developing team of Delhi Technological University established in 2011.
 				</p>
 				{/* <Subscribe /> */}
 				<Photos />
 			</Container>
 
-			<div className="z-10 border-t bg-zinc-800 px-8 py-24">
+			{/* <div className="z-10 border-t border-zinc-600 bg-zinc-800 px-8 py-24">
 				<section className="mx-auto max-w-3xl">
 					<div className="mb-8 flex flex-col items-baseline gap-2 md:mb-4 md:flex-row md:gap-4">
 						<p className="text-xl text-slate-700 md:text-2xl">Speaker Series</p>
@@ -111,38 +112,65 @@ export default function Home() {
 						))}
 					</div>
 				</section>
-			</div>
-			<div className="relative z-10 border-t bg-slate-900 bg-[url(/images/berkeley-demo-day.png)] bg-cover px-8 py-24 text-slate-100">
-				<div className="absolute inset-0 -z-10 bg-black/10 backdrop-blur backdrop-filter"></div>
-				<section className="mx-auto max-w-3xl">
+			</div> */}
+			<div className="flex flex-col gap-3 justify-between items-center mx-auto border-t border-zinc-600 bg-zinc-800 px-8 py-24 text-slate-100 md:flex-row md:px-28">
+				<section className="max-w-2xl">
 					<div className="mb-8 flex flex-col items-baseline gap-2">
-						<h2 className="font-accent text-3xl font-bold text-white md:text-4xl">
-							Berkeley Demo Sessions
+						<h2 className="font-accent text-3xl font-bold text-primary md:text-4xl">
+							Major Achievements
 						</h2>
-						<p className="text-2xl text-white/75">and Berkeley Demo Day</p>
+						<p className="text-2xl text-white">and counting...</p>
 					</div>
-					<p className="max-w-lg text-lg">
-						Berkeley Demo Sessions will be a community of student creators who
-						come together to work on their passion projects every Sunday.
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Secured 2nd position in analysis, 6th position in Design event and 6th position in Men Drag event at ASME E-fest, HPVC 2020 Asia-Pacific hosted by Marwadi university, Rajkot.
 					</p>
-					<p className="mt-4 max-w-lg text-lg">
-						Demo Sessions will be complemented by Berkeley Demo Day, a monthly
-						show-and-tell for passion projects.
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Secured 1st position in analysis and 5th in design in ASME E fest 2019 at VIT Vellore.
 					</p>
-					<p className="mt-4 max-w-lg text-lg">
-						The best way to learn more for now is to check out the invite for
-						the first Berkeley Demo Day, which took place Sunday, April&nbsp;30:
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Winners of the innovation category at ASME E-Fest HPVC 2018 North America at Pennsylvania state university, USA. Also secured the 5th position in design.
 					</p>
-					<a
-						href="https://berkeleydemo.day"
-						className="mt-8 inline-block transform rounded-lg border border-slate-600 bg-slate-600/80 px-6 py-2 font-bold text-white shadow-sm transition-transform duration-500 hover:scale-105"
-					>
-						Learn more »
-					</a>
-					<p className="mt-4 max-w-lg">
-						Subscribe to the BTF newsletter below to stay updated!
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Secured 1st position in m and women drag race and 3rd position in design at ASME HPVC Asia pacific 2018.Also secured the overall runners up position.
 					</p>
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Winners of the innovation category at ASME E-Fest HPVC 2018 North America at Pennsylvania state university, USA. Also secured the 5th position in design.
+					</p>
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Overall winners of the ASME HPVC Asia Pacific 2015 and 2017.
+					</p>
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Secured overall 12th position in ASME HPVC North America west 2016.
+					</p>
+					</div>
+					<div className="flex flex-row gap-3 text-lg items-center">
+					<span>🏆</span>
+					<p className="my-2 text-lg">
+					Successfully built the fastest human powered vehicle in India with a top speed of 80 kmph.
+					</p>
+					</div>
 				</section>
+				<Image src={collage} alt="Collage" className="w-auto"/>
 			</div>
 		</main>
 	)

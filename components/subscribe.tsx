@@ -1,8 +1,8 @@
 export default function Subscribe() {
 	return (
 		<div className="py-4">
-			<p className="mb-2 text-sm font-medium text-slate-700">
-				Never miss what’s happening at Berkeley.
+			<p className="mb-2 text-sm font-medium text-slate-200">
+				Want to pust the boundaries?
 			</p>
 			<form
 				className="flex flex-col items-stretch gap-2 sm:flex-row"
@@ -26,7 +26,7 @@ export default function Subscribe() {
 					Subscribe
 				</button>
 			</form>
-			<p className="mt-2 text-sm text-slate-500">
+			<p className="mt-2 text-sm text-slate-200">
 				Use your .edu email if you have one!
 			</p>
 		</div>

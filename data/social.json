@@ -1,22 +1,22 @@
 [
 	{
 		"name": "Email",
-		"link": "mailto:btfdecal@gmail.com",
+		"link": "mailto:teamraftaar@dtu.ac.in",
 		"image": "/vectors/social/email.svg"
 	},
 	{
-		"name": "Twitter",
-		"link": "https://twitter.com/btfcal",
-		"image": "/vectors/social/twitter.svg"
-	},
-	{
-		"name": "Facebook",
-		"link": "https://www.facebook.com/btfdecal",
-		"image": "/vectors/social/facebook.svg"
+		"name": "Instagram",
+		"link": "https://www.instagram.com/teamraftaardtu/",
+		"image": "/vectors/social/instagram.svg"
 	},
 	{
 		"name": "LinkedIn",
-		"link": "https://www.linkedin.com/company/how-to-build-the-future-decal/",
+		"link": "https://www.linkedin.com/company/teamraftaar/",
 		"image": "/vectors/social/linkedin.svg"
+	},
+	{
+		"name": "Facebook",
+		"link": "https://www.facebook.com/RaftaarDTU/",
+		"image": "/vectors/social/facebook.svg"
 	}
 ]

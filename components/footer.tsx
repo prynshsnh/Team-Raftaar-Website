@@ -6,14 +6,14 @@ import Subscribe from "./subscribe"
 
 export default function Footer() {
 	return (
-		<footer className="border-t">
+		<footer className="border-t border-zinc-600">
 			<Container className="flex flex-col items-center gap-12 text-center">
-				<Subscribe />
+				{/* <Subscribe /> */}
 				<div className="flex gap-8">
 					{navLinks.map(({ link, title }) => (
 						<a
 							key={link}
-							className="text-slate-500 transition-colors hover:text-slate-800"
+							className="text-slate-200 transition-colors hover:text-primary"
 							href={link}
 						>
 							{title}
