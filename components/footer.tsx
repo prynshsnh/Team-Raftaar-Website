@@ -2,7 +2,6 @@ import socials from "@/data/social.json"
 import navLinks from "@/data/nav-links.json"
 import Image from "next/image"
 import Container from "./container"
-import Subscribe from "./subscribe"
 
 export default function Footer() {
 	return (
@@ -30,12 +29,12 @@ export default function Footer() {
 							rel="noopener"
 							title={name}
 						>
-							<Image src={image} alt={name} width={24} height={24} />
+							<Image src={image} alt={name} width={28} height={28} />
 						</a>
 					))}
 				</div>
-				<p className="max-w-sm text-slate-400">
-					© Team Raftaar 2024
+				<p className="max-w-sm text-slate-300">
+					© Team Raftaar • 2024
 				</p>
 			</Container>
 		</footer>

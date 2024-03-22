@@ -1,7 +1,9 @@
 "use client"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import navLinks from "@/data/nav-links.json"
 import Logo from "./logo"
+import dtu from "@/public/images/home/dtulogo.png"
 import clsx from "clsx"
 import { HamburgerMenuIcon } from "@radix-ui/react-icons"
 
@@ -9,7 +11,7 @@ export default function Navbar() {
 	const pathname = usePathname()
 
 	return (
-		<nav className="flex flex-col items-stretch justify-center gap-x-14 text-slate-700 md:flex-row md:items-center md:px-20">
+		<nav className="flex flex-col items-stretch justify-between gap-x-14 text-slate-700 md:flex-row md:items-center md:px-20">
 			<input type="checkbox" id="toggle" className="peer hidden" />
 			<div className="flex items-center justify-between p-8 md:px-0">
 				<a href="/" className="flex items-center gap-4">
@@ -34,6 +36,9 @@ export default function Navbar() {
 					</li>
 				))}
 			</ul>
+			<a href="http://dtu.ac.in/" className="flex items-center gap-4">
+					<Image src={dtu} alt=""className="hidden md:block w-16 h-16"/>
+			</a>
 		</nav>
 	)
 }
