@@ -77,7 +77,7 @@ export default function Home() {
 						className="md:hidden h-auto w-5/6 -z-10 rotate-6 transition mt-16"
 					/>
 					<div>
-						<h1 className="mt-8 max-w-2xl text-center md:text-left font-primary text-4xl font-bold uppercase italic !leading-[1.15] tracking-tighter text-slate-200 drop-shadow-lg md:text-6xl">
+						<h1 className="mt-8 max-w-2xl text-center md:text-left font-primary text-5xl font-bold uppercase italic !leading-[1.15] tracking-tighter text-slate-200 drop-shadow-lg md:text-6xl">
 							We are{" "}
 							<span className="shiny text-orange-300 drop-shadow-lg">
 								speed{" "}
@@ -98,12 +98,12 @@ export default function Home() {
 				<Photos />
 			</Container>
 
-			<div className="border-t border-zinc-600 bg-zinc-900 px-8 py-20">
-				<section className="mx-auto max-w-3xl">
+			<div className="border-t border-zinc-600 bg-zinc-900 px-8 py-12">
+				<section className="mx-auto">
 					<h2 className="text-center text-3xl font-bold text-primary md:text-4xl">
 						Our Proud Sponsors
 					</h2>
-					<div className="mt-10 flex flex-col items-center justify-center gap-5 md:flex-row md:gap-10">
+					<div className="mt-10 flex flex-col md:flex-wrap items-center justify-center gap-5 md:flex-row md:gap-10">
 						<Image src={solidWorks} alt="Solid Works" className="h-10 w-auto" />
 						<Image src={ansys} alt="Ansys" className="h-10 w-auto" />
 						<Image src={altair} alt="Altair" className="h-10 w-auto" />
@@ -124,6 +124,12 @@ export default function Home() {
 							Major Achievements
 						</h2>
 						<p className="text-2xl text-white">and counting...</p>
+					</div>
+					<div className="flex flex-row items-center gap-3 text-lg">
+						<span>🏆</span>
+						<p className="my-2 text-lg">
+						Secured 1st position in the design event of eHPVC at the ASME EFx India 2023.
+						</p>
 					</div>
 					<div className="flex flex-row items-center gap-3 text-lg">
 						<span>🏆</span>
@@ -151,8 +157,8 @@ export default function Home() {
 					<div className="flex flex-row items-center gap-3 text-lg">
 						<span>🏆</span>
 						<p className="my-2 text-lg">
-							Secured 1st position in m and women drag race and 3rd position in
-							design at ASME HPVC Asia pacific 2018.Also secured the overall
+							Secured 1st position in men and women drag race and 3rd position in
+							design at ASME HPVC Asia pacific 2018. Also secured the overall
 							runners up position.
 						</p>
 					</div>
@@ -175,13 +181,6 @@ export default function Home() {
 						<p className="my-2 text-lg">
 							Secured overall 12th position in ASME HPVC North America west
 							2016.
-						</p>
-					</div>
-					<div className="flex flex-row items-center gap-3 text-lg">
-						<span>🏆</span>
-						<p className="my-2 text-lg">
-							Successfully built the fastest human powered vehicle in India with
-							a top speed of 80 kmph.
 						</p>
 					</div>
 				</section>

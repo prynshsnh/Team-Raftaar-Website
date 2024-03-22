@@ -1,5 +1,9 @@
 [
 	{
+		"title": "Home",
+		"link": "/"
+	},
+	{
 		"title": "Team",
 		"link": "/team"
 	},
