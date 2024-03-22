@@ -5,7 +5,7 @@ export default function Logo() {
 	return (
 		<Image
 			priority
-			alt="Build the Future logo"
+			alt="Team Raftaar logo"
 			width="100"
 			src={logo}
 		/>

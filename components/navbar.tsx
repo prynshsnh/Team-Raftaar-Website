@@ -16,7 +16,7 @@ export default function Navbar() {
 					<Logo />
 				</a>
 				<label htmlFor="toggle" className="cursor-pointer md:hidden">
-					<HamburgerMenuIcon className="h-8 w-8" />
+					<HamburgerMenuIcon className="h-8 w-8 font-extrabold text-white" />
 				</label>
 			</div>
 			<ul className="hidden text-lg text-white font-bold flex-col border-y bg-primary shadow-sm peer-checked:flex md:flex md:flex-row md:gap-2 md:border-none md:bg-transparent md:shadow-none">

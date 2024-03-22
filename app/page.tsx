@@ -1,5 +1,3 @@
-import Subscribe from "@/components/subscribe"
-import speakers from "@/data/speakers.json"
 import Image from "next/image"
 import kaze from "@/public/images/home/Kaze.png"
 import team from "@/public/images/home/team.jpeg"
@@ -11,6 +9,7 @@ import creo from "@/public/images/sponsors/creo.png"
 import vactech from "@/public/images/sponsors/vactech.png"
 import codingninjas from "@/public/images/sponsors/ninjas.png"
 import altair from "@/public/images/sponsors/altair.png"
+import vehicle from "@/public/images/home/vehicle-transformed.png"
 import Container from "@/components/container"
 import Link from "next/link"
 
@@ -51,7 +50,7 @@ function Background() {
 				}}
 				className="absolute inset-0 -z-10"
 			/>
-			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-800 to-50%" />
+			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-800 to-50%" /> 
 		</>
 	)
 }
@@ -66,17 +65,18 @@ export default function Home() {
 			>
 				<Link
 					href="/decal"
-					className="transform whitespace-nowrap mx-auto rounded-full bg-orange-200 px-4 py-1 text-base font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
+					className="transform whitespace-nowrap mx-auto rounded-full bg-white px-4 py-1 text-base font-bold text-slate-700 transition-transform duration-500 hover:translate-x-2"
 				>
 					Apply to Team Raftaar »
 				</Link>
-				<h1 className="mt-8 max-w-2xl text-center font-primary text-4xl uppercase italic tracking-tighter font-bold !leading-[1.15] text-slate-200 md:text-6xl">
+				<h1 className="mt-8 max-w-2xl text-center font-primary text-4xl uppercase italic tracking-tighter drop-shadow-lg font-bold !leading-[1.15] text-slate-200 md:text-6xl">
 					Where engineering{" "}
-					<span className="shiny text-orange-300">meets speed </span> 💨
+					<span className="shiny text-orange-300 drop-shadow-lg">meets speed </span> 💨
 				</h1>
 				<p className="mb-12 mt-8 max-w-[45ch] text-lg text-center text-slate-100 sm:text-xl mx-auto">
 					Team Raftaar is the Hybrid Human Powered Vehicle developing team of Delhi Technological University established in 2011.
 				</p>
+				<Image src={vehicle} alt="" className="absolute top-50 w-5/6 -z-10 h-auto md:w-3/5 md:top-10 opacity-40 rotate-6"/>
 				{/* <Subscribe /> */}
 				<Photos />
 			</Container>

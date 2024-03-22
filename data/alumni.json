@@ -2,7 +2,7 @@
 	{
 		"name": "Vedika Dayal",
 		"class": "23",
-		"major": "Product @ Zynga",
+		"por": "Product @ Zynga",
 		"linkedin": "https://www.linkedin.com/in/vedika-dayal/",
 		"twitter": "https://twitter.com/vedikasworld",
 		"email": "vedikadayal@berkeley.edu",
@@ -11,7 +11,7 @@
 	{
 		"name": "Karen Tseng",
 		"class": "24",
-		"major": "Business Administration, Cognitive Science",
+		"por": "Business Administration, Cognitive Science",
 		"linkedin": "https://www.linkedin.com/in/yun-jung-tseng/",
 		"twitter": "https://twitter.com/kar3ntseng",
 		"email": "yunjungtseng@berkeley.edu",
@@ -20,7 +20,7 @@
 	{
 		"name": "Divyansh Saksena",
 		"class": "22",
-		"major": "MS IEOR @ Berkeley",
+		"por": "MS IEOR @ Berkeley",
 		"linkedin": "https://www.linkedin.com/in/divsaksena/",
 		"twitter": "https://twitter.com/divsksna",
 		"email": "divsaksena@berkeley.edu",
@@ -29,7 +29,7 @@
 	{
 		"name": "Smera Patil",
 		"class": "24",
-		"major": "Cognitive Science",
+		"por": "Cognitive Science",
 		"linkedin": "https://www.linkedin.com/in/smerapatil/",
 		"twitter": "https://twitter.com/smera___",
 		"email": "smera@berkeley.edu",
@@ -38,7 +38,7 @@
 	{
 		"name": "Mingjie Jiang",
 		"class": "22",
-		"major": "Product Eng @ Ender",
+		"por": "Product Eng @ Ender",
 		"linkedin": "https://www.linkedin.com/in/itsmingjie/",
 		"twitter": "https://twitter.com/itsmingjie",
 		"email": "m6@berkeley.edu",
@@ -47,7 +47,7 @@
 	{
 		"name": "Brandon Handoko",
 		"class": "22",
-		"major": "Co-founder @ Side Hustle Stack",
+		"por": "Co-founder @ Side Hustle Stack",
 		"linkedin": "https://www.linkedin.com/in/brandon-handoko/",
 		"twitter": "https://twitter.com/brndnwll",
 		"email": "brndn@berkeley.edu",
@@ -56,7 +56,7 @@
 	{
 		"name": "Danny Ha",
 		"class": "22",
-		"major": "Growth @ Ampush",
+		"por": "Growth @ Ampush",
 		"linkedin": "https://www.linkedin.com/in/dannyhha/",
 		"twitter": "https://twitter.com/dannyyha",
 		"image": "danny.jpg"
@@ -64,14 +64,14 @@
 	{
 		"name": "Shivam Dave",
 		"class": "22",
-		"major": "Eng @ Atlassian",
+		"por": "Eng @ Atlassian",
 		"linkedin": "https://www.linkedin.com/in/shivamdave98/",
 		"image": "shivam.jpg"
 	},
 	{
 		"name": "Daniel Andrews",
 		"class": "20",
-		"major": "Founder @ Playground",
+		"por": "Founder @ Playground",
 		"linkedin": "https://www.linkedin.com/in/danielandrews43/",
 		"twitter": "https://twitter.com/danielandrews43",
 		"image": "daniel.jpeg"
@@ -79,7 +79,7 @@
 	{
 		"name": "Johnathan Zhou",
 		"class": "20",
-		"major": "Product @ Loom",
+		"por": "Product @ Loom",
 		"linkedin": "https://www.linkedin.com/in/johnathanz/",
 		"twitter": "https://twitter.com/johnathanzhou",
 		"image": "johnathan.jpeg"
@@ -87,7 +87,7 @@
 	{
 		"name": "Thomas Liao",
 		"class": "20",
-		"major": "Previously @ Scale AI",
+		"por": "Previously @ Scale AI",
 		"linkedin": "https://www.linkedin.com/in/thomasliao/",
 		"twitter": "https://twitter.com/ThomasILiao",
 		"image": "thomas.jpeg"
@@ -95,7 +95,7 @@
 	{
 		"name": "Aakash Adesara",
 		"class": "19",
-		"major": "Co-founder @ SellScale",
+		"por": "Co-founder @ SellScale",
 		"linkedin": "https://www.linkedin.com/in/aaadesara/",
 		"twitter": "https://twitter.com/aakashadesara",
 		"image": "aakash.jpeg"
@@ -103,7 +103,7 @@
 	{
 		"name": "Maitri Shah",
 		"class": "20",
-		"major": "Eng @ Loom",
+		"por": "Eng @ Loom",
 		"linkedin": "https://www.linkedin.com/in/maitri-shah/",
 		"twitter": "https://twitter.com/maitrishahhhh",
 		"image": "maitri.jpeg"
@@ -111,7 +111,7 @@
 	{
 		"name": "Zuhayeer Musa",
 		"class": "18",
-		"major": "Co-founder @ Levels.fyi",
+		"por": "Co-founder @ Levels.fyi",
 		"linkedin": "https://www.linkedin.com/in/zuhayeer/",
 		"twitter": "https://twitter.com/zuhayeer",
 		"image": "zuhayeer.jpeg"
@@ -119,7 +119,7 @@
 	{
 		"name": "Jimmy Liu",
 		"class": "18",
-		"major": "Co-founder @ Sail",
+		"por": "Co-founder @ Sail",
 		"linkedin": "https://www.linkedin.com/in/jimmyliu98/",
 		"twitter": "https://twitter.com/jimmyliu?lang=en",
 		"image": "jimmy.jpeg"
@@ -127,7 +127,7 @@
 	{
 		"name": "Ivan Borzenko",
 		"class": "22",
-		"major": "Co-founder @ Dreamers Media",
+		"por": "Co-founder @ Dreamers Media",
 		"linkedin": "https://www.linkedin.com/in/ivanborzenko/",
 		"twitter": "https://twitter.com/ivan_borzenko",
 		"image": "ivan.png"
@@ -135,7 +135,7 @@
 	{
 		"name": "Chloe Guo",
 		"class": "23",
-		"major": "Investing @ Morgan Stanley",
+		"por": "Investing @ Morgan Stanley",
 		"email": "chloerongyuguo@berkeley.edu",
 		"image": "chloe.jpg"
 	}

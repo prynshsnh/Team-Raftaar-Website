@@ -2,28 +2,64 @@
 	{
 		"name": "Vaibhav Kumar",
 		"class": "25",
-		"major": "Captain",
+		"por": "Captain",
 		"linkedin": "https://www.linkedin.com/in/sauhardjain/",
 		"twitter": "https://twitter.com/sauhard_jain",
 		"email": "sauhard@berkeley.edu",
-		"image": "sid.jpeg"
+		"image": "vaibhav.jpeg"
 	},
 	{
 		"name": "Priyanshu Sinha",
 		"class": "25",
-		"major": "Vice-Captain",
-		"linkedin": "https://www.linkedin.com/in/natashaarya/",
-		"twitter": "https://twitter.com/natashaarya_",
+		"por": "Vice-Captain",
+		"linkedin": "https://www.linkedin.com/in/priyanshusinhadtu/",
+		"twitter": "https://twitter.com/idkpriyanshu",
 		"email": "natashaarya@berkeley.edu",
-		"image": "priyanshu.jpeg"
+		"image": "sinha.jpeg"
 	},
 	{
 		"name": "Aditya Singh",
 		"class": "25",
-		"major": "Vice-Captain",
+		"por": "Vice-Captain",
 		"linkedin": "https://www.linkedin.com/in/zhao-catherine/",
 		"twitter": "https://twitter.com/catherineyzhao",
 		"email": "catherinezhao@berkeley.edu",
 		"image": "adityasingh.jpg"
+	},
+	{
+		"name": "Aditya Yadav",
+		"class": "25",
+		"por": "Manager",
+		"linkedin": "https://www.linkedin.com/in/zhao-catherine/",
+		"twitter": "https://twitter.com/catherineyzhao",
+		"email": "catherinezhao@berkeley.edu",
+		"image": "ayadav.jpg"
+	},
+	{
+		"name": "Vishal Yadav",
+		"class": "25",
+		"por": "Corporate Head",
+		"linkedin": "https://www.linkedin.com/in/zhao-catherine/",
+		"twitter": "https://twitter.com/catherineyzhao",
+		"email": "catherinezhao@berkeley.edu",
+		"image": "vishal.jpeg"
+	},
+	{
+		"name": "Ayush Kumar",
+		"class": "25",
+		"por": "Mechanical Head",
+		"linkedin": "https://www.linkedin.com/in/zhao-catherine/",
+		"twitter": "https://twitter.com/catherineyzhao",
+		"email": "catherinezhao@berkeley.edu",
+		"image": "ayush.jpeg"
+	},
+	{
+		"name": "Teeksha Harish",
+		"class": "25",
+		"por": "Software Head",
+		"linkedin": "https://www.linkedin.com/in/zhao-catherine/",
+		"twitter": "https://twitter.com/catherineyzhao",
+		"email": "catherinezhao@berkeley.edu",
+		"image": "teeksha.jpeg"
 	}
 ]

@@ -40,7 +40,7 @@ function Socials({ person }: SocialsProps) {
 interface Person {
 	name: string
 	class: string
-	major: string
+	por: string
 	image: string
 	linkedin?: string
 	twitter?: string
@@ -63,13 +63,13 @@ function People({
 				alt={`Picture of ${person.name}`}
 				width="200"
 				height="200"
-				className="h-24 w-24 rounded-lg object-cover object-top shadow-sm md:h-48 md:w-48"
+				className="h-24 w-24 rounded-lg object-cover object-top shadow-sm md:h-44 md:w-44"
 			/>
 			<div>
 				<p className="text-lg font-medium text-slate-100">
 					{person.name} ‘{person.class}
 				</p>
-				<p className="text-sm text-orange-300">{person.major}</p>
+				<p className="text-sm text-orange-300">{person.por}</p>
 				<Socials person={person} />
 			</div>
 		</div>
@@ -86,12 +86,12 @@ function People({
 export default function Team() {
 	return (
 		<Container>
-			<h1 className="title mb-4 text-primary">Team</h1>
-			<p className="max-w-xl text-lg text-slate-200 sm:text-xl">
+			<h1 className="text-4xl font-bold font-accent mb-4 text-primary text-center">CORE Panel</h1>
+			<p className="text-center text-lg text-slate-200 sm:text-xl">
 				We’re a small team of facilitators with an ambitious mission.
 			</p>
 			<People people={team} order="asc" />
-			<h2 className="mt-12 font-accent text-primary text-3xl font-bold">Alumni</h2>
+			<h2 className="mt-12 text-center font-accent text-primary text-3xl font-bold">Members</h2>
 			<People people={alumni} order="desc" />
 		</Container>
 	)
