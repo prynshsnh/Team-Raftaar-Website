@@ -27,7 +27,7 @@ export default function Navbar() {
 						<a
 							className={clsx(
 								"block px-8 py-4 transition-colors hover:text-orange-800 md:rounded-lg md:px-4 md:py-2",
-								pathname === link ? "underline decoration-4 underline-offset-8 decoration-orange-200" : "",
+								pathname === link ? "bg-primary" : "",
 							)}
 							href={link}
 						>

@@ -92,7 +92,7 @@ export default function Home() {
 					<Image
 						src={vehicle}
 						alt=""
-						className="-z-10 my-16 hidden h-auto w-[500px] rotate-6 md:block"
+						className="-z-10 my-16 hidden h-auto w-[600px] rotate-6 md:block"
 					/>
 				</div>
 				<Photos />
