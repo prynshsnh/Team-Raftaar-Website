@@ -7,7 +7,6 @@ export default function Footer() {
 	return (
 		<footer className="border-t border-zinc-600">
 			<Container className="flex flex-col items-center gap-12 text-center">
-				{/* <Subscribe /> */}
 				<div className="flex gap-8">
 					{navLinks.map(({ link, title }) => (
 						<a

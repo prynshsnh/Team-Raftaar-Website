@@ -92,7 +92,7 @@ export default function Team() {
 			</p>
 			<People people={team} order="asc" />
 			<h2 className="mt-12 text-center font-accent text-primary text-3xl font-bold">Members</h2>
-			<People people={alumni} order="desc" />
+			{/* <People people={alumni} order="desc" /> */}
 		</Container>
 	)
 }
