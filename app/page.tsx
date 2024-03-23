@@ -10,7 +10,6 @@ import vactech from "@/public/images/sponsors/vactech.png"
 import codingninjas from "@/public/images/sponsors/ninjas.png"
 import altair from "@/public/images/sponsors/altair.png"
 import vehicle from "@/public/images/home/vehicle-transformed.png"
-import background from "@/public/images/home/background.jpeg"
 import Container from "@/components/container"
 import Link from "next/link"
 
@@ -81,7 +80,7 @@ export default function Home() {
 							We are{" "}
 							<span className="shiny text-orange-300 drop-shadow-lg">
 								speed{" "}
-							</span>{" "}
+							</span>
 							💨
 						</h1>
 						<p className="mx-auto mb-10 mt-8 max-w-[45ch] text-center md:text-left text-lg text-slate-100 sm:text-xl">
@@ -98,25 +97,7 @@ export default function Home() {
 				<Photos />
 			</Container>
 
-			<div className="border-t border-zinc-600 bg-zinc-900 px-8 py-12">
-				<section className="mx-auto">
-					<h2 className="text-center text-3xl font-bold text-primary md:text-4xl">
-						Our Proud Sponsors
-					</h2>
-					<div className="mt-10 flex flex-col md:flex-wrap items-center justify-center gap-5 md:flex-row md:gap-10">
-						<Image src={solidWorks} alt="Solid Works" className="h-10 w-auto" />
-						<Image src={ansys} alt="Ansys" className="h-10 w-auto" />
-						<Image src={altair} alt="Altair" className="h-10 w-auto" />
-						<Image
-							src={codingninjas}
-							alt="Coding Ninjas"
-							className="h-16 w-auto"
-						/>
-						<Image src={vactech} alt="Vactech" className="h-16 w-auto" />
-						<Image src={creo} alt="Creo" className="h-16 w-auto" />
-					</div>
-				</section>
-			</div>
+			
 			<div className="mx-auto flex flex-col items-center justify-between gap-3 border-t border-zinc-600 bg-zinc-800 px-8 py-24 text-slate-100 md:flex-row md:px-28">
 				<section className="max-w-2xl">
 					<div className="mb-8 flex flex-col items-baseline gap-2">
@@ -185,6 +166,26 @@ export default function Home() {
 					</div>
 				</section>
 				<Image src={collage} alt="Collage" className="w-auto" />
+			</div>
+			<div className="relative bg-[url(/images/home/back.jpeg)] bg-cover -z-20 border-t border-zinc-600 bg-zinc-900 px-8 py-12">
+			<div className="absolute inset-0 -z-10 bg-black/20 backdrop-blur-sm"></div>
+				<section className="mx-auto max-w-3xl">
+					<h2 className="text-center text-3xl font-bold text-primary font-accent md:text-4xl">
+						Our Proud Sponsors
+					</h2>
+					<div className="mt-10 flex flex-col md:flex-wrap items-center justify-center gap-5 md:flex-row md:gap-10">
+						<Image src={solidWorks} alt="Solid Works" className="h-8 w-auto" />
+						<Image src={ansys} alt="Ansys" className="h-8 w-auto" />
+						<Image src={altair} alt="Altair" className="h-8 w-auto" />
+						<Image
+							src={codingninjas}
+							alt="Coding Ninjas"
+							className="h-12 w-auto"
+						/>
+						<Image src={vactech} alt="Vactech" className="h-14 w-auto" />
+						<Image src={creo} alt="Creo" className="h-14 w-auto" />
+					</div>
+				</section>
 			</div>
 		</main>
 	)

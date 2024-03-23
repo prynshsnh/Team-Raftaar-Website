@@ -10,13 +10,13 @@ export default function NotFound() {
 			</h1>
 			<p className="text-lg">
 				You can reach out to a
-				team-member on the <Link href="/team" className="text-primary bold underline">Team Raftaar Members</Link>.
+				team-member on the <Link href="/team" className="text-primary font-bold underline underline-offset-4 hover:text-orange-300 transition-colors">Team Raftaar Members</Link>.
 			</p>
 			<Link
 				className="mt-8 rounded-lg border border-orange-300 bg-primary px-6 py-2 font-bold text-white shadow-sm"
 				href="/"
 			>
-				Go home
+				Go Home
 			</Link>
 		</Container>
 	)

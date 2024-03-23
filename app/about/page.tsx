@@ -1,5 +1,6 @@
 import team from "@/data/team.json"
 import alumni from "@/data/alumni.json"
+import pastVehicles from "@/data/pastVehicles.json"
 import Image from "next/image"
 import Container from "@/components/container"
 import sortBy from "lodash-es/sortBy"
@@ -86,13 +87,31 @@ function People({
 export default function Team() {
 	return (
 		<Container>
-			<h1 className="text-4xl font-bold font-accent mb-4 text-primary text-center">CORE Panel</h1>
+			<h1 className="text-4xl font-bold font-accent mb-4 text-primary text-center">Past Vehicles</h1>
 			<p className="text-center text-lg text-slate-200 sm:text-xl">
 				We’re a small team of facilitators with an ambitious mission.
 			</p>
-			<People people={team} order="asc" />
+            <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <div
+			className="p-2 flex items-center gap-3 md:flex-col rounded-lg bg-zinc-900"
+		>
+			<Image
+				src={"/images/vehicles/Kaze.png"}
+				alt=""
+				width="300"
+				height="300"
+				className="rounded-lg object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="text-lg font-medium text-white justify-self-center">
+					KAZE
+				</p>
+			</div>
+		     </div>
+		    </div>
+			{/* <People people={team} order="asc" />
 			<h2 className="mt-12 text-center font-accent text-primary text-3xl font-bold">Members</h2>
-			<People people={alumni} order="desc" />
+			<People people={alumni} order="desc" /> */}
 		</Container>
 	)
 }
