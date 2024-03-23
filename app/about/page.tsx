@@ -1,114 +1,107 @@
-import team from "@/data/team.json"
-import alumni from "@/data/alumni.json"
-import pastVehicles from "@/data/pastVehicles.json"
 import Image from "next/image"
 import Container from "@/components/container"
-import sortBy from "lodash-es/sortBy"
+import kaze from "@/public/images/vehicles/Kaze.png"
+import mach4 from "@/public/images/vehicles/Mach4.png"
+import nimbus from "@/public/images/vehicles/Nimbus.png"
+import pegasus from "@/public/images/vehicles/Pegasus.png"
+import eurus from "@/public/images/vehicles/Eurus.png"
+import falcon from "@/public/images/vehicles/Falcon.jpg"
 
-interface SocialsProps {
-	person: Person
-}
-function Socials({ person }: SocialsProps) {
-	const socials = ["linkedin", "twitter", "email"] as const
-
-	return (
-		<div className="mt-4 flex gap-2">
-			{socials.map(
-				(social) =>
-					person[social] && (
-						<a
-							key={social}
-							href={
-								social === "email" ? `mailto:${person[social]}` : person[social]
-							}
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-2"
-						>
-							<Image
-								src={`/vectors/social/${social}.svg`}
-								alt={social}
-								width={18}
-								height={18}
-							/>
-						</a>
-					),
-			)}
-		</div>
-	)
-}
-
-interface Person {
-	name: string
-	class: string
-	por: string
-	image: string
-	linkedin?: string
-	twitter?: string
-	email?: string
-}
-function People({
-	people,
-	order,
-}: {
-	people: Person[]
-	order: "asc" | "desc"
-}) {
-	const results = sortBy(people, ["class"]).map((person) => (
-		<div
-			className="flex items-center gap-4 md:flex-col md:items-start"
-			key={person.name}
-		>
-			<Image
-				src={`/images/team/${person.image}`}
-				alt={`Picture of ${person.name}`}
-				width="200"
-				height="200"
-				className="h-24 w-24 rounded-lg object-cover object-top shadow-sm md:h-44 md:w-44"
-			/>
-			<div>
-				<p className="text-lg font-medium text-white">
-					{person.name} ‘{person.class}
-				</p>
-				<p className="text-base text-orange-300 font-bold">{person.por}</p>
-				<Socials person={person} />
-			</div>
-		</div>
-	))
-	if (order === "desc") results.reverse()
-
-	return (
-		<div className="mt-12 grid gap-8 md:grid-cols-[repeat(auto-fill,minmax(200px,1fr))]">
-			{results}
-		</div>
-	)
-}
-
-export default function Team() {
+export default function About() {
 	return (
 		<Container>
-			<h1 className="text-4xl font-bold font-accent mb-4 text-primary text-center">Past Vehicles</h1>
-			<p className="text-center text-lg text-slate-200 sm:text-xl">
-				We’re a small team of facilitators with an ambitious mission.
-			</p>
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <h1 className="text-4xl font-bold font-accent mb-4 text-primary text-center">Our Mission</h1>
+            <section className="text-justify text-lg text-slate-200 max-w-5xl mx-auto">
+            <p className="my-1 leading-snug">We are the Human Powered Vehicle Team consisting of undergraduate students who aim to give the world an alternative solution to the present-day energy crisis.</p>
+            <p className="my-1 leading-snug">We study, design, develop, and manufacture the fully-faired recumbent bikes and trikes which can reach up to the highest speeds of 60 kmph solely by human power!!! The team rigorously researches about the human-powered vehicles and uses the best possible design, the best possible techniques, and the best possible materials for manufacturing.</p>
+            <p className="my-1 leading-snug">From building fairing completely from carbon fiber to incorporating the internationally acclaimed landing gear system in the vehicle, Team Raftaar is redefining the way human-powered vehicles are perceived in India. Our unique manufacturing style, innovative design, detailed analysis, and advanced use of composites have been appreciated and awarded multiple times both in National and international competitions.</p>
+            <p className="my-1 leading-snug">With each passing year, we as a team are getting closer and closer to our ultimate ambition of bringing HPVs closer to the everyday commuters as a sustainable alternative to other conventional modes of transport.</p>
+			</section>
+			<h1 className="text-4xl font-bold font-accent mt-8 mb-4 text-primary text-center">Past Vehicles</h1>
+            <div className="mt-12 grid gap-6 md:gap-12 md:grid-cols-3">
             <div
-			className="p-2 flex items-center gap-3 md:flex-col rounded-lg bg-zinc-900"
-		>
+			className="flex flex-col items-center border border-zinc-500 rounded-lg bg-zinc-900 overflow-hidden">
 			<Image
-				src={"/images/vehicles/Kaze.png"}
-				alt=""
-				width="300"
-				height="300"
-				className="rounded-lg object-cover object-top shadow-sm"
+				src={kaze}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
 			/>
 			<div>
-				<p className="text-lg font-medium text-white justify-self-center">
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
 					KAZE
 				</p>
 			</div>
 		     </div>
+
+             <div
+			className="flex items-center border border-zinc-500 flex-col rounded-lg bg-zinc-900 overflow-hidden">
+			<Image
+				src={mach4}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
+					MACH4
+				</p>
+			</div>
+		     </div>
+
+             <div
+			className="flex items-center border border-zinc-500 flex-col rounded-lg bg-zinc-900 overflow-hidden">
+			<Image
+				src={nimbus}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
+					NIMBUS
+				</p>
+			</div>
+		     </div>
+             <div
+			className="flex items-center border border-zinc-500 flex-col rounded-lg bg-zinc-900 overflow-hidden">
+			<Image
+				src={pegasus}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
+					PEGASUS
+				</p>
+			</div>
+		     </div>
+
+             <div
+			className="flex items-center border border-zinc-500 flex-col rounded-lg bg-zinc-900 overflow-hidden">
+			<Image
+				src={eurus}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
+					EURUS
+				</p>
+			</div>
+		     </div>
+             <div
+			className="flex items-center border border-zinc-500 flex-col rounded-lg bg-zinc-900 overflow-hidden">
+			<Image
+				src={falcon}
+				alt="New"
+				className="w-full h-auto object-cover object-top shadow-sm"
+			/>
+			<div>
+				<p className="my-2 text-lg font-medium text-white justify-self-center">
+					FALCON
+				</p>
+			</div>
+		     </div>
 		    </div>
+            
 			{/* <People people={team} order="asc" />
 			<h2 className="mt-12 text-center font-accent text-primary text-3xl font-bold">Members</h2>
 			<People people={alumni} order="desc" /> */}
