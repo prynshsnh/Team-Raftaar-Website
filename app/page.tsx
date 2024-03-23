@@ -71,6 +71,7 @@ export default function Home() {
 				</Link>
 				<div className="flex flex-col items-center md:flex-row">
 				<Image
+						priority
 						src={vehicle}
 						alt=""
 						className="md:hidden h-auto w-5/6 -z-10 rotate-6 transition mt-16"
