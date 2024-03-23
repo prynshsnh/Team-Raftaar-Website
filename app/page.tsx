@@ -169,7 +169,7 @@ export default function Home() {
 				<Image src={collage} alt="Collage" className="w-auto" />
 			</div>
 			<div className="relative bg-[url(/images/home/back.jpeg)] bg-cover -z-20 border-t border-zinc-600 bg-zinc-900 px-8 py-12">
-			<div className="absolute inset-0 -z-10 bg-black/20 backdrop-blur-sm"></div>
+			<div className="absolute inset-0 -z-10 bg-black/30"></div>
 				<section className="mx-auto max-w-3xl">
 					<h2 className="text-center text-3xl font-bold text-primary font-accent md:text-4xl">
 						Our Proud Sponsors
